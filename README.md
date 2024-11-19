@@ -3,6 +3,7 @@
 This document outlines the design and implementation of a comprehensive evaluation strategy for a retrieval-augmented generation (RAG) pipeline used for generating FAQs from legal documents. The evaluation strategy was carefully crafted to assess different aspects of the system, including **retrieval quality**, **answer quality**, and **system performance**. Below, you will find the rationale for selecting specific metrics, as well as explanations of the methods and their relevance to the system's goals.
 
 **Repository Structure** 
+```
 ├── conda.yaml                         - base env file
 ├── data
 │   ├── embeddings                     - stored ChromaDB embeddings
@@ -26,7 +27,7 @@ This document outlines the design and implementation of a comprehensive evaluati
     ├── rag.py                         - rag methods
     ├── tests                          - for future unit tests
     └── utils.py                       - any extra tools/functions
-
+```
 ---
 
 **Install dependencies**:

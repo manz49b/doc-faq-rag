@@ -32,24 +32,24 @@ This document outlines the design and implementation of a comprehensive evaluati
 
 **Install dependencies**:
 Assuming you have conda, install Mamba (a fast, drop-in replacement for Conda) by running
-    ```bash
-    conda install -n base -c conda-forge mamba
-    ```
+```
+conda install -n base -c conda-forge mamba
+```
 Set your base environment (replace the path with the actual path you want to use).
-    ```bash
-        export BASE_ENV_DIR=/opt/homebrew/Caskroom/mambaforge/base/envs
-    ```
+```
+    export BASE_ENV_DIR=/opt/homebrew/Caskroom/mambaforge/base/envs
+```
 
 To install the conda environment, update the yaml file with your environment prefix and add a Jupyter kernel.
-    ```bash
-        mamba env create --file conda.yaml
-    ```
+```
+    mamba env create --file conda.yaml
+```
 
 Every time you update a package make sure you update the conda.yaml file and 
 run the code below to auto update your environment.
-    ```bash
-        mamba env update --file conda.yaml --prune
-    ```
+```
+    mamba env update --file conda.yaml --prune
+```
 
 You need an .env file containing:
 OPENAI_API_KEY

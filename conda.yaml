@@ -1,0 +1,33 @@
+name: doc-faq-rag
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - ipykernel
+  - pip
+  - numpy
+  - pandas
+  - pyarrow
+  - scikit-learn
+  - pytorch=>2.0 
+  - torchvision
+  - torchaudio
+  - python-dotenv
+  - nltk
+  - rouge
+  - rapidfuzz
+  - pip:
+      - transformers
+      - sentence-transformers
+      - accelerate 
+      - sentencepiece
+      - chromadb
+      - mistralai
+      - anthropic
+      - voyageai
+      - evidently
+      - optimum
+
+prefix: /opt/homebrew/Caskroom/mambaforge/base/envs/doc-faq-rag
